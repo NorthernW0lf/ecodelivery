@@ -1,5 +1,6 @@
 const jwt = require('jsonwebtoken');
 const tokenModel = require('../models/token-model');
+const ApiError = require("../exceptions/api-error");
 
 class TokenService {
     generateToken(payload) {
@@ -8,6 +9,24 @@ class TokenService {
         return {
             accessToken,
             refreshToken
+        }
+    }
+
+    validationAccessToken(token){
+        try{
+            const userData = jwt.verify(token, process.env.JWT_ACCESS_SECRET);
+            return userData;
+        } catch (e) {
+            return null;
+        }
+    }
+
+    validateRefreshToken(token){
+        try{
+            const userData = jwt.verify(token, process.env.JWT_REFRESH_SECRET);
+            return userData;
+        } catch (e) {
+            return null;
         }
     }
 
@@ -23,6 +42,11 @@ class TokenService {
 
     async removeToken(refreshToken) {
         const tokenData = await tokenModel.deleteOne({refreshToken});
+        return tokenData;
+    }
+
+    async findToken(refreshToken){
+        const tokenData = await tokenModel.findOne({refreshToken})
         return tokenData;
     }
 }
