@@ -9,5 +9,10 @@
     "mobx-react-lite": "^4.0.7",
     "nodemailer": "^6.9.15",
     "uuid": "^10.0.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.47",
+    "tailwindcss": "^3.4.14"
   }
 }

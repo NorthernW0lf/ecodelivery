@@ -1,8 +1,10 @@
 const express = require('express');
 const userController = require('../controllers/user-controller');
+const orderController = require('../controllers/order-controller');
 const router = express.Router();
 const {body} = require('express-validator');
 const authMiddleware = require('../middlewares/auth-middleware');
+router.get('/orders', authMiddleware, orderController.getAllOrders);
 
 router.post('/registration',
     body('email').isEmail(),
@@ -14,5 +16,7 @@ router.post('/logout', userController.logout);
 router.get('/activate/:link', userController.activate);
 router.get('/refresh', userController.refresh);
 router.get('/users', authMiddleware ,userController.getUsers);
+router.get('/orders', orderController.getAllOrders);
+router.get('/orders/:trackingNumber', orderController.trackOrder);
 
 module.exports = router;

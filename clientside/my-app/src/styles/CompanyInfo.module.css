@@ -1,0 +1,33 @@
+.company__info {
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: white;
+    height: 600px;
+}
+
+.breadcrumb span {
+    color: #333;
+}
+
+.title {
+    font-size: 50px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 15px;
+}
+
+.subtitle {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.description p {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: #444;
+}

@@ -1,0 +1,191 @@
+.container{
+  margin: 0 auto;
+}
+header{
+  background-color: rgb(170, 190, 139);
+  height: 200px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+header a{
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  margin-right: 20px;
+}
+header p{
+  color: #fff;
+  margin-left: 300px;
+  font-size: 22px;
+  font-weight: 700;
+}
+.eco__image{
+  margin-right: 50px;
+}
+.main__text{
+  height: 800px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-image: url('../public/images/tree.jpg');
+  background-size: cover;
+  opacity: 0.9;
+}
+.first__text__main{
+  font-size: 55px;
+  text-align: center;
+  margin: 0;
+  color: #fff;
+}
+.second__text__main{
+  font-size: 55px;
+  text-align: center;
+  margin: 0;
+  color: blue;
+}
+
+.business-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  height: 500px;
+}
+
+.text-section {
+  color: #77b255;
+  flex: 1;
+}
+
+h1 {
+  font-size: 56px;
+  font-weight: bold;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.sub-text {
+  margin-top: 20px;
+}
+
+.sub-text p {
+  font-size: 25px;
+  color: #4b6da8;
+  margin: 4px 0;
+}
+
+.arrows-section {
+  display: flex;
+  gap: 10px;
+}
+
+.arrow1 {
+  width: 120px;
+  height: 90px;
+  background: linear-gradient(135deg, #4b6da8 25%, #77b255 50%, transparent 50%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 0% 100%);
+  transform: skewX(-20deg);
+}
+
+.arrow1 + .arrow1 {
+  transform: translateX(-30px) skewX(-20deg);
+  opacity: 0.8;
+}
+
+
+.eco-logistics-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  color: #4b6da8;
+  height: 600px;
+}
+
+.title {
+  font-size: 48px;
+  color: #4b6da8;
+  margin-bottom: 40px;
+}
+
+.path-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 40px;
+}
+
+.circle {
+  width: 50px;
+  height: 50px;
+  background-color: #77b255;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.click-icon {
+  font-size: 24px;
+  color: white;
+}
+
+.arrow {
+  width: 100px;
+  height: 4px;
+  background-color: #77b255;
+  transform: rotate(45deg);
+  position: relative;
+}
+
+.arrow::before {
+  content: '';
+  position: absolute;
+  top: -8px;
+  right: -20px;
+  border: solid #77b255;
+  border-width: 0 4px 4px 0;
+  padding: 8px;
+  transform: rotate(-135deg);
+}
+
+.why-us-section {
+  text-align: left;
+  width: 80%;
+}
+
+.why-us-section h2 {
+  font-size: 36px;
+  color: #77b255;
+  margin-bottom: 20px;
+}
+
+.text-block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.text-block ul {
+  list-style: none;
+  padding: 0;
+  color: #4b6da8;
+}
+
+.text-block ul li {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.footer__container{
+  margin: 0 auto;
+  align-items: center;
+  text-align: center;
+}
+.eco__image__footer{
+  width: 30px;
+  height: 30px;
+  display: flex;
+}
