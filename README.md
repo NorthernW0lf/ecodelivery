@@ -76,8 +76,5 @@ Setup
 Contact
 
 For questions or feedback, reach out to us:
-- Email: eco.delivery.team@example.com
+- Email: shahnimiller99@gmail.com
 - GitHub: [NorthernW0lf](https://github.com/NorthernW0lf)
-
-
-![image](https://github.com/user-attachments/assets/dc390227-5585-40d3-b13d-6d43908c57d1)
